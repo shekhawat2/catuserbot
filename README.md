@@ -6,19 +6,18 @@ Get APP ID and API HASH from [HERE](https://my.telegram.org) and BOT TOKEN from 
 
 [![Get string session](https://repl.it/badge/github/sandy1709/sandeep1709)](https://generatestringsession.sandeep1709.repl.run/)
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fsandy1709%2Fcatuserbot%2Ftree%2Fbugs&template=https%3A%2F%2Fgithub.com%2Fsandy1709%2Fcatuserbot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fsandy1709%2Fcatuserbot%2Ftree%2Fbugs&template=https%3A%2F%2Fgithub.com%2Fshekhawat2%2Fcatuserbot)
 <p align="center">
-  <a href="https://github.com/sandy1709/catuserbot/fork">
-    <img src="https://img.shields.io/github/forks/sandy1709/catuserbot?label=Fork&style=social">
-    
+  <a href="https://github.com/shekhawat2/catuserbot/fork">
+    <img src="https://img.shields.io/github/forks/shekhawat2/catuserbot?label=Fork&style=social">
   </a>
-  <a href="https://github.com/sandy1709/catuserbot">
-    <img src="https://img.shields.io/github/stars/sandy1709/catuserbot?style=social">
+  <a href="https://github.com/shekhawat2/catuserbot">
+    <img src="https://img.shields.io/github/stars/shekhawat2/catuserbot?style=social">
   </a>
 </p>
 
 
-[![catuserbot logo](https://telegra.ph/file/7e1e89621fabbf02596f8.jpg)](https://heroku.com/deploy?template=https://github.com/sandy1709/catuserbot)
+[![catuserbot logo](https://telegra.ph/file/7e1e89621fabbf02596f8.jpg)](https://heroku.com/deploy?template=https://github.com/shekhawat2/catuserbot)
 
 
 ### Join [here](https://t.me/catuserbot17) for updates and tuts and [here](https://t.me/catuserbot_support) for discussion and bugs
