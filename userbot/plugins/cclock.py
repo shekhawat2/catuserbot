@@ -7,11 +7,10 @@ from datetime import datetime
 import git
 import patch
 from telethon.tl.functions.users import GetFullUserRequest
-from var import Var
 
 from userbot.plugins import reply_id
 
-from ..utils import admin_cmd, edit_or_reply, progress, sudo_cmd
+from ..utils import admin_cmd, progress, sudo_cmd
 from . import ALIVE_NAME
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "cat"
@@ -56,7 +55,6 @@ async def _(event):
             enablerzip = replied_user.user.username + "-CClockEnabler"
             disablerzip = replied_user.user.username + "-CClockDisabler"
 
-            GITHUB_ACCESS_TOKEN = Var.GITHUB_ACCESS_TOKEN
             REPO = (
                 "https://"
                 + str(GITHUB_ACCESS_TOKEN)
