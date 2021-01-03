@@ -74,9 +74,7 @@ async def _(event):
             os.system("./tools/apktool if framework/framework-ext-res.apk")
             os.system("./tools/apktool if framework/miui.apk")
             os.system("./tools/apktool if framework/miuisystem.apk")
-            shutil.rmtree(
-                "flashable/system/priv-app/MiuiSystemUI", ignore_errors=True
-            )
+            shutil.rmtree("flashable/system/priv-app/MiuiSystemUI", ignore_errors=True)
             os.makedirs("flashable/system/priv-app/MiuiSystemUI")
             shutil.copy(
                 "MiuiSystemUI.apk",
@@ -89,9 +87,7 @@ async def _(event):
             patch.fromfile("lcclock").apply()
 
             os.system("./tools/apktool b MiuiSystemUI")
-            shutil.rmtree(
-                "flashable/system/priv-app/MiuiSystemUI", ignore_errors=True
-            )
+            shutil.rmtree("flashable/system/priv-app/MiuiSystemUI", ignore_errors=True)
             os.makedirs("flashable/system/priv-app/MiuiSystemUI")
             shutil.copy(
                 "MiuiSystemUI/dist/MiuiSystemUI.apk",
