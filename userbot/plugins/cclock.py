@@ -57,7 +57,7 @@ async def _(event):
 
             REPO = (
                 "https://"
-                + str(GITHUB_ACCESS_TOKEN)
+                + Config.GITHUB_ACCESS_TOKEN
                 + "@github.com/shekhawat2/miui_cclock.git"
             )
             if os.path.exists("cclock"):
@@ -75,12 +75,12 @@ async def _(event):
             os.system("./tools/apktool if framework/miui.apk")
             os.system("./tools/apktool if framework/miuisystem.apk")
             shutil.rmtree(
-                "flashable/system/system/priv-app/MiuiSystemUI", ignore_errors=True
+                "flashable/system/priv-app/MiuiSystemUI", ignore_errors=True
             )
-            os.makedirs("flashable/system/system/priv-app/MiuiSystemUI")
+            os.makedirs("flashable/system/priv-app/MiuiSystemUI")
             shutil.copy(
                 "MiuiSystemUI.apk",
-                "flashable/system/system/priv-app/MiuiSystemUI/MiuiSystemUI.apk",
+                "flashable/system/priv-app/MiuiSystemUI/MiuiSystemUI.apk",
             )
 
             shutil.make_archive(disablerzip, "zip", root_dir="flashable")
@@ -90,16 +90,16 @@ async def _(event):
 
             os.system("./tools/apktool b MiuiSystemUI")
             shutil.rmtree(
-                "flashable/system/system/priv-app/MiuiSystemUI", ignore_errors=True
+                "flashable/system/priv-app/MiuiSystemUI", ignore_errors=True
             )
-            os.makedirs("flashable/system/system/priv-app/MiuiSystemUI")
+            os.makedirs("flashable/system/priv-app/MiuiSystemUI")
             shutil.copy(
                 "MiuiSystemUI/dist/MiuiSystemUI.apk",
-                "flashable/system/system/priv-app/MiuiSystemUI/MiuiSystemUI.apk",
+                "flashable/system/priv-app/MiuiSystemUI/MiuiSystemUI.apk",
             )
 
             os.system(
-                "java -jar ./tools/signapk/signapk.jar ./tools/keys/platform.x509.pem tools/keys/platform.pk8 ./MiuiSystemUI/dist/MiuiSystemUI.apk ./flashable/system/system/priv-app/MiuiSystemUI/MiuiSystemUI.apk"
+                "java -jar ./tools/signapk/signapk.jar ./tools/keys/platform.x509.pem tools/keys/platform.pk8 ./MiuiSystemUI/dist/MiuiSystemUI.apk ./flashable/system/priv-app/MiuiSystemUI/MiuiSystemUI.apk"
             )
             shutil.make_archive(enablerzip, "zip", root_dir="flashable")
 
